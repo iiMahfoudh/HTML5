@@ -1,0 +1,180 @@
+<!-- This is for HTML5 And rendring mode -->
+<!doctype html> 
+<html>
+    <head>
+        <!-- This is for text formatting  -->
+        <meta charset="UTF-8" />
+        <!-- Webpage title -->
+        <title> Page Title </title>
+        <!-- metadata  -->
+        <meta name="description" content="Page Description" />
+        <!-- Css-Styling -->
+        <style>
+            body {
+                background-color: rgb(230, 246, 250);
+            }
+        </style>
+        <script>
+        <!-- Java Script code -->
+        </script>
+        <!-- Single Line Comment -->
+        <!-- Multi line comment 1
+         comment 2
+         comment 3 -->
+    </head>
+    <body>
+        <h1 id="hoho"><mark> heading 1</mark></h1>
+        <h2><i>heading 2</i></h2>
+        <h3><em>heading 3</em></h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+        <u>Inline text element</u>
+        Inline 2 text element
+        <p>This is paragraph element : <b>a block text element</b></p>
+        <p>This is paragraph 2 element : <strong>a block text element</strong></p>
+
+        <!-- FORMATTING ELEMENT -->
+
+        <!-- <b> is for bold text
+             <strong> for important text
+             <i> italic text
+             <em> Emphasized text 
+             <mark> highlight text
+             <u> underline text
+             <small> smaller text
+             <del> delete text
+             <ins> inserted text
+             <sub> subscript text
+             <sup> superscript text
+                -->
+        <h1>This is a <small>smaller text</small> Test</h1>
+        <h1>this is a <del>Deleted text</del> test : <del>100$</del> <mark>80$</mark></h1>
+        <h1>This is a <ins>new inserted text</ins> test.</h1>
+        <h1>Test is Water ion it's H<sub>2</sub>O<sup>++</sup></h1>
+
+        <!-- Elements Attributes -->
+         <!-- href : hypertext refrence
+              a is anchor tag for linksa
+              Title like a popout when mouse
+              targer="_blank" open in new tab 
+              Id as an identifier to jump-->
+         <a href="https://www.google.com" target="_blank" title="Go to google" > Google</a>
+         <a href="https://www.facebook.com" title="go to facebook">Facebook</a>
+         <a href="#hoho" title="go to text">jump head 1</a>
+         <a href="mailto:iimahfoudh@gmail.com" title="mail me">Contact</a>
+
+
+         <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas corporis expedita quasi voluptatum? Distinctio nulla nam tempore facere molestiae, alias fuga, ab quis suscipit dolor qui vel magnam ut.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas corporis expedita quasi voluptatum? Distinctio nulla nam tempore facere molestiae, alias fuga, ab quis suscipit dolor qui vel magnam ut.</p>
+         <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas corporis expedita quasi voluptatum? Distinctio nulla nam tempore facere molestiae, alias fuga, ab quis suscipit dolor qui vel magnam ut.</p>
+            
+         <!-- src : source / alt : alternate text if img not loaded -->
+
+         <img src="/img/iiMahfoudh_Arc.png" alt="photo missing" width="200px">
+        <!-- <ul> : Unordred List
+             <li> : List items 
+                -->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS
+                <ul>
+                    <li>Angular</li>
+                    <li>ReactJS</li>
+                    <li>Vuejs</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- <ol> : Ordred list -->
+        <ol>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JS
+                <!-- Reversed attribite
+                     Start=""
+                     type = "A" alphabitic order ABC , abc , I II III i ii iii
+                     value = "50"
+                -->
+                <ol reversed start="100">
+                    <li>Angular</li>
+                    <li>ReactJS</li>
+                    <li>Vuejs</li>
+                </ol>
+            </li>
+        </ol>
+        <!-- <dl> : Description list
+             <dt> : Term
+             <dd> : Term Description -->
+        <dl>
+            <dt> HTML 
+                <dd>Luanguage of the web</dd>
+            </dt>
+            <dt> CSS
+                <dd>Styling of the web</dd>
+            </dt>
+            <dt> JS
+                <dd>Backend of the web</dd>
+            </dt>
+        </dl>
+        <!-- Table
+            <tr> : table row
+            <td> : table data cell
+            <th> : table header cell
+            thead
+            tbody
+            tfoot
+         -->
+            <!-- border attribute for styling -->
+        <table border="1" cellpadding = "5">
+            <caption>Smart people marks</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mahfoudh</td>
+                    <td>22yo</td>
+                    <td>70/20</td>
+                </tr>
+                <tr>
+                    <td>mahfoudh</td>
+                    <td>23yo</td>
+                    <td>80/20</td>
+                </tr>
+                <tr>
+                    <td>mahfoudh</td>
+                    <td>24yo</td>
+                    <td>100/20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- Colspan attribute -->
+                    <td colspan="2">Some of all levels</td>
+                    <td>9999</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Horizental rule -->
+        <hr>
+        <!-- Span and break:new line element -->
+        <span>Hello World <br> It's me mahfoudh</span>
+        <!-- <div> is a container that have more than one elements to apply attributes </div> -->
+         <div>
+            <span>Hey guys</span>
+            <span><br> it meeeh</span>
+         </div>
+         <!-- HTML Entities -->
+          <p>symbole &lt;p&gt; &copf; &capcap; &delta; &sigma;</p>
+          <!-- Semantic Elements -->
+          HTML5 Semantic Better than &lt;dev&gt;
+           <img src="/img/figure01.png" alt="HTML5 Semantic">
+        <a href="https://bunch-media.com/2021/06/03/html5-semantic-elements-explained/"><br> For more...</a>
+
+    </body>
+</html>
