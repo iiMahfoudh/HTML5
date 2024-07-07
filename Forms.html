@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Description" content="Web Site Description" />
+    <title>WebSite</title>
+</head>
+
+<body>
+    <div>
+        <h1>Website</h1>
+        <h2>Website Description</h2>
+    </div>
+    <!-- Formes for inputs
+         Form Attributes:
+                    ** -action="file" > Files to recieve data in backend
+                    ** -method="get"/"post" , to hide query strings
+                    ** -novalidate (For Testing post purpose)
+                    ** -target="_blank" (new tab)
+         Input Attributes: 
+                    -type : text , password , email , submit
+                    -required
+                    -placeholder
+                    -value
+                    -readonly
+                    -autofocus
+                    -minlength
+                    -maxlength
+                    -disabled like readonly but data is not sent to backend 
+                    ** -name="name" > like an ID to backend
+                    -->
+    <form action="backend.php" method="post" target="_blank">
+        <div>
+            <label>UserName : </label>
+            <input type="text" required placeholder="Put username here" name="usr_name">
+        </div>
+        <br>
+        <div>
+            <label>UserEmail : </label>
+            <input type="email" placeholder="Put email here" value="ngigga@gmail.com" name="usr_mail" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Password : :</label>
+            <input 
+            type="password" 
+            required 
+            placeholder="write your password here" 
+            name="usr_pass" 
+            minlength="8"
+            maxlength="16">
+        </div>
+        <br>
+        <hr>
+        <input type="submit" value="save" autofocus>
+        <!-- Hidden input -->
+        <input type="hidden" value="mahfoudh">
+        <!-- Reset input -->
+        <input type="reset">
+        <!-- Color input -->
+        <input type="color" name="usr_clr">
+        <!-- range input 
+                 Attribute : -min , -max -step 
+        -->
+        <input type="range" name="usr_range" min="0" max="100" step="20" value="0">
+        <!-- number input 
+                Attribute : -min , -max -step
+         -->
+        <input type="number" name="usr_nmb" min="1995" max="2024" step="5">
+        <hr>
+        <!-- Radio input you could only select one choice
+            Attribute : -checked -->
+         Select a gender : 
+        <div>
+            <input id="win" type="radio" name="usr_gender" value="male" checked>
+            <label for="win">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="usr_gender" value="female">
+            <label>Female</label>
+        </div>
+        <div>
+            <input type="radio" name="usr_gender" value="106">
+            <label>106</label>
+        </div>
+        <hr>
+        <div>
+            <input id="suka" type="checkbox">
+            <label for="suka">checkbox</label>
+        </div>
+        <div>
+            <input id="suka2" type="checkbox">
+            <label for="suka2">checkbox2</label>
+        </div>
+        <div>
+            <input id="suka3" type="checkbox">
+            <label for="suka3">checkbox3</label>
+        </div>
+        <hr>
+        <!-- Select include optgroup that (include <option>)
+            Attribute : -multiple (multiple select using Ctrl)
+                        -label in <optgroup>
+                        -selected in <option>
+        -->
+        <div>
+            <label for="sel">Select OS:</label>
+            <select name="usr_os" id="sel" multiple>
+                <optgroup label="User Friendly">
+                    <option value="os1" selected>Windows</option>
+                    <option value="os2">linux</option>
+                    <option value="os3">Mac</option>
+                </optgroup>
+                <optgroup label="Linux Distros">
+                    <option value="os4">Ferdora</option>
+                    <option value="os5">Arch</option>
+                    <option value="os6">Ubunto</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <textarea name="subject" id="sub" cols="50" rows="6">This is a text area</textarea>
+        </div>
+        <hr>
+        <!-- File Upload Input -->
+        <div>
+            <label for="up">Upload file:</label>
+            <input id="up" type="file">
+        </div>
+        <hr>
+        <!-- Search input -->
+        <div>
+            <label for="up">Search:</label>
+            <input id="up" type="search">
+        </div>
+        <hr>
+        <!-- URL input -->
+        <div>
+            <label for="up">Url:</label>
+            <input id="up" type="url">
+        </div>
+        <hr>
+        <!-- Date input -->
+            <div>
+                <label for="up">Date:</label>
+                <input id="up" type="date">
+            </div>
+        <hr>
+        <!-- Month input -->
+            <div>
+                <label for="up">Month:</label>
+                <input id="up" type="month">
+            </div>
+        <hr>
+        <!-- Time input -->
+            <div>
+                <label for="up">Time:</label>
+                <input id="up" type="time">
+            </div>
+        <hr>
+        <!-- Data-list input like select input but have search feature -->
+            <div>
+                <label>Data List:</label>
+                <input list="programms" name="prog">
+                <datalist id="programms">
+                    <option value="python"></option>
+                    <option value="c++"></option>
+                    <option value="js"></option>
+                    <option value="css"></option>
+                </datalist>
+            </div>
+
+    </form>
+</body>
+
+</html>
