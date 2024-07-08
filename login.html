@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="website description" />
+        <title>Website title</title>
+    </head>
+    <!-- <q> for quote - inline element
+        <blockquote> for quote - Block Element
+        -->
+    <body>
+        <h1>Hello World.</h1>
+        <q>I'm A Wise Man</q>
+        <blockquote>I'm a very wise man</blockquote>
+        <button>Click</button>
+        <!-- word break opportunity -->
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<wbr> Hic reprehenderit praesentium amet optio neque,<wbr> temporibus vel doloribus aspernatur deleniti.<wbr> Earum et ullam dolores doloribus veritatis sint id,<wbr> nesciunt veniam tenetur!
+        </div>
+        <!-- Bdirection isolation -->
+         <p>السلام 2 welcome</p>
+         <p><bdi>السلام</bdi> 2 welcome</p>
+        <hr>
+        <!-- computer code -->
+         <code>
+                int x;
+                int y;
+                int z = x + y ;
+                cout << z << endl;
+         </code>
+         <hr>
+         <pre>                Lorem ipsum dol
+    or, sit amet            consectetur adipisi
+            cing e          lit. Nam id corporis voluptat
+        es quia repr            ehenderit! Numquam esse</pre>
+        <hr>
+        <iframe title="Webpage" src="https://en.cppreference.com/w/" width="600" height="200"></iframe>
+        <hr>
+        Accessibility
+        <button>sent</button>
+        <button>recieve</button>
+        <hr>
+        <!-- A Div can play a role of many element by adding role attribute and also be accessible by tabindexing and also relied to many elements by ID's -->
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="Plan1" > plan one</div>
+        <label id="Plan1">Check box as a div</label>
+        <div tabindex="0">plan2</div>
+        <div tabindex="0">plan3</div>
+    </body>
+</html>
